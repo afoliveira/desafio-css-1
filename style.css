@@ -1,0 +1,194 @@
+/* Reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, fieldset, form, label, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+  border: 0;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+
+.container {
+  margin: 100px auto 0 auto;
+  position: relative;
+  width: 263px;
+  height: 386px;
+  border-radius: 16px 50px 16px 16px;
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+
+.img-container {
+  position: absolute;
+  left: -30px;
+  bottom: 160px;
+  background: url('img/elipse.png') no-repeat;
+  background-position: 30px 191px;
+}
+
+.ativo {
+  display: block;
+}
+
+.img-container img:not(.ativo) {
+  display: none;
+}
+
+/* Informação do tenis */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  left: 21px;
+  width: 218px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
+.info-marca {
+  font-size: 14px;
+  line-height: 17px;
+  color: #8f8f8f;
+}
+
+.info-modelo {
+  font-size: 26px;
+  line-height: 32px;
+  color: #29455F
+}
+
+.info-preco {
+  align-self: flex-end;
+  color: #29455F;
+  font-size: 22px;
+}
+
+.info-preco span {
+  color: #808080;
+  font-size: 14px;
+}
+
+/* Cor do tenis */
+
+.cor-tenis {
+  position: absolute;
+  top: 260px;
+  left: 21px;
+  width: 218px;
+  font-family: 'Open Sans';
+}
+
+.cor-tenis > label {
+  color: #808080;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.lista-cor {
+  display: flex;
+  list-style: none;
+}
+
+.lista-cor::after {
+  content: '';
+  clear: both;
+}
+
+.radio-cor {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  margin: 0 23px 0 0;
+  border-radius: 50%;
+}
+
+.radio-cor label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  border-radius: 50%;
+}
+
+.verde label {
+  background: #B5DB48;
+}
+
+.vermelho label {
+  background: #FF3838 ; 
+}
+
+.azul label {
+  background: #3864FF ;
+}
+
+.lista-cor input:focus + label {
+  outline: 2px solid #8f8f8f;
+}
+
+.container-tamanho {
+  position: absolute;
+  top: 320px;
+  left: 21px;
+  /* width: 218px; */
+  font-family: 'Open Sans';
+}
+
+.lista-tamanho {
+  display: flex;
+  list-style: none;
+}
+
+.container-tamanho > label {
+  color: #808080;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tamanho a {
+  padding: 4px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  color: #808080;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.tamanho a:focus {
+  background: #B5DB48;
+  color: #fff;
+}
+
+.carrinho {
+  width: 49px;
+  height: 80px;
+  background: #B5DB48;
+  border: none;
+  border-radius: 16px;
+  position: absolute;
+  top: 292px;
+  right: 23px;
+}
+
+.lista-seta {
+  margin-top: 5px;
+}
+
+.seta {
+  display: block;
+  margin: -17px auto 0 auto;
+}
