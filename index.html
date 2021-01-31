@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Css - Nike React</title>
+    <link rel='stylesheet' type="text/css" href="style.css"></link>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-container">
+        <img class="img-tenis" src="img/tenis-verde.png">
+        <img class="img-tenis" src="img/tenis-vermelho.png">
+        <img class="img-tenis" src="img/tenis-azul.png">
+      </div>
+      <div class="info">
+        <span class="info-marca">Nike</span>
+        <h3 class="info-modelo">Epic React Flyknit 2</h3>
+        <span class="info-preco"><span>R$</span> 359,00</span>
+      </div>
+      <div class="cor-tenis">
+        <label>Cores:</label>
+        <ul class="lista-cor">
+          <li class="radio-cor verde">
+            <input type="radio" name="cor" id="verde">
+            <label for="verde"></label>
+          </li>
+          <li class="radio-cor vermelho">
+            <input type="radio" name="cor" id="vermelho">
+            <label for="vermelho"></label>
+          </li>
+          <li class="radio-cor azul">
+            <input type="radio" name="cor" id="azul">
+            <label for="azul"></label>
+          </li>
+        </ul>
+      </div>
+      <div class="container-tamanho">
+        <label>Tamanhos:</label>
+        <ul class="lista-tamanho">
+          <li class="tamanho" id="tamanho-37">
+            <a href="#">37</a>
+          </li>
+          <li class="tamanho">
+            <a href="#">38</a>
+          </li>
+          <li class="tamanho">
+            <a href="#">39</a>
+          </li>
+          <li class="tamanho">
+            <a href="#">40</a>
+          </li>
+        </ul>
+      </div>
+      <button class="carrinho">
+        <div class="lista-seta">
+          <img class="seta" src="img/seta-baixo2.svg">
+          <img class="seta"src="img/seta-baixo1.svg">
+          <img class="seta"src="img/seta-baixo.svg"> 
+        </div>
+        <img src="img/carrinho.svg">
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
